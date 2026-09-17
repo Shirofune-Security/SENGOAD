@@ -295,9 +295,9 @@ def person(cx, cy, login, disp, roles, target, ecolor, elabel,
         arrow((cx, cy), tg, ec, 2, label=el, dashed=dl, r1=22, r2=30, lf=F(13))
 
 # --- Yamato users (center / mini) ---
-person(852, 150, "robert → toyotomi.hideyoshi", "豊臣秀吉", [("domain admin", RED)],
+person(852, 150, "toyotomi.hideyoshi", "豊臣秀吉", [("domain admin", RED)],
        (1006, 360), RED, "admin")
-person(700, 285, "cersei → oichi", "お市の方", [("domain admin", RED)],
+person(700, 285, "oichi", "お市の方", [("domain admin", RED)],
        (1006, 360), RED, "admin")
 group(700, 400); text(700, 428, "Gotairo (五大老)", F(14), (40, 40, 40), anchor="mm")
 arrow((735, 392), (1006, 360), BLUE, 2, label="RDP", r1=22, r2=30, lf=F(13))
@@ -305,31 +305,31 @@ group(700, 480); text(700, 508, "Toyotomi (豊臣)", F(14), (40, 40, 40), anchor
 arrow((735, 478), (1006, 365), BLUE, 2, label="RDP", r1=22, r2=30, lf=F(13))
 
 # --- Kai users (left) ---
-person(150, 560, "catelyn → sanjo", "三条の方", [], P_KOFU, RED, "admin")
-person(335, 470, "eddard → takeda.shingen", "武田信玄",
+person(150, 560, "sanjo", "三条の方", [], P_KOFU, RED, "admin")
+person(335, 470, "takeda.shingen", "武田信玄",
        [("bot 5min (LLMNR)", (70, 120, 180)), ("domain admin", RED)],
        P_KOFU, RED, "admin", bot=True, extra_targets=[(P_SHIRA, RED, "admin", False)])
-person(140, 690, "robb → takeda.katsuyori", "武田勝頼", [("bot 3min (LLMNR)", (70, 120, 180))],
+person(140, 690, "takeda.katsuyori", "武田勝頼", [("bot 3min (LLMNR)", (70, 120, 180))],
        P_SHIRA, GREEN, "RDP (active)", bot=True, dashed=True)
 group(250, 830); text(250, 858, "Takeda (武田)", F(14), (40, 40, 40), anchor="mm")
 arrow((288, 826), P_KOFU, BLUE, 2, label="RDP", r1=22, r2=30, lf=F(13))
 arrow((285, 845), P_SHIRA, BLUE, 2, label="RDP", r1=22, r2=34, lf=F(13))
 group(250, 945); text(250, 973, "Yoban (夜番)", F(14), (40, 40, 40), anchor="mm")
 arrow((290, 952), P_SHIRA, BLUE, 2, label="RDP", r1=22, r2=30, lf=F(13))
-person(135, 1050, "jeor → honda.tadakatsu", "本多忠勝", [], P_SHIRA, RED, "admin")
-person(130, 1150, "jon.snow → sanada.yukimura", "真田幸村", [],
+person(135, 1050, "honda.tadakatsu", "本多忠勝", [], P_SHIRA, RED, "admin")
+person(130, 1150, "sanada.yukimura", "真田幸村", [],
        P_SHIRA, PURPLE, "mssql_admin", loff=(0, -8))
 
 # --- Aki users (right) ---
-person(1820, 560, "daenerys → mori.motonari", "毛利元就", [("domain admin", RED)],
+person(1820, 560, "mori.motonari", "毛利元就", [("domain admin", RED)],
        P_HIRO, RED, "admin")
 group(1880, 720); text(1880, 748, "Mori (毛利)", F(14), (40, 40, 40), anchor="mm")
 arrow((1845, 716), P_HIRO, BLUE, 2, label="RDP", r1=22, r2=30, lf=F(13))
 group(1880, 905); text(1880, 933, "KibaShu (騎馬衆)", F(14), (40, 40, 40), anchor="mm")
 arrow((1843, 912), P_SAKAI, BLUE, 2, label="RDP", r1=22, r2=30, lf=F(13))
-person(1858, 1045, "khal.drogo → date.masamune", "伊達政宗", [("admin · mssql_admin · ECS4", RED)],
+person(1858, 1045, "date.masamune", "伊達政宗", [("admin · mssql_admin · ECS4", RED)],
        P_SAKAI, RED, "admin")
-person(1665, 1150, "jorah → honda.tadatomo", "本多忠朝", [],
+person(1665, 1150, "honda.tadatomo", "本多忠朝", [],
        P_SAKAI, ORANGE, "mapping_mssql_trust", loff=(70, 30))
 
 # ===================================================================
